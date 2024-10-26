@@ -18,3 +18,13 @@ This repository contains a collection of web-based projects developed using Java
 Each project demonstrates the use of JSP for creating functional, interactive applications with simple, user-friendly interfaces.
 
 In each project there is also atteched SQL file for database
+
+# Project Structure
+
+Each project follows a similar folder structure, making it easy to navigate and understand the organization of files.
+
+[Project_name]
+├── WEB-INF/
+│   └── web.xml
+├── [JSP files]
+├── [SQL file]
