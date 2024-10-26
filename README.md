@@ -16,3 +16,5 @@ This repository contains a collection of web-based projects developed using Java
 10. **To-Do List**: Users add, edit, delete, and mark tasks as complete, with completed tasks auto-deleted.
 
 Each project demonstrates the use of JSP for creating functional, interactive applications with simple, user-friendly interfaces.
+
+In each project there is also atteched SQL file for database
