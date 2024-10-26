@@ -23,8 +23,10 @@ In each project there is also atteched SQL file for database
 
 Each project follows a similar folder structure, making it easy to navigate and understand the organization of files.
 
+```plaintext
 [Project_name]
 ├── WEB-INF/
 │   └── web.xml
 ├── [JSP files]
 ├── [SQL file]
+```
