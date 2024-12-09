@@ -15,6 +15,8 @@
             <option value="admin">Admin</option>
         </select><br>
         <input type="submit" value="Signup">
+        <br><br>
+        Do have an account then <a href="login.jsp">Login</a>
     </form>
 
     <%
@@ -35,9 +37,14 @@
                 int result = pst.executeUpdate();
 
                 if(result > 0) {
-                    out.println("Signup successful!");
+                    // Check the role and redirect accordingly
+                    if(role.equalsIgnoreCase("admin")) {
+                        response.sendRedirect("Adminview.jsp");
+                    } else if(role.equalsIgnoreCase("employee")) {
+                        response.sendRedirect("Empview.jsp");
+                    }
                 } else {
-                    out.println("Signup failed.");
+                    out.println("<p style='color:red;'>Signup failed. Please try again.</p>");
                 }
             } catch(Exception e) {
                 out.println("Error: " + e.getMessage());
